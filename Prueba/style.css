@@ -1,0 +1,95 @@
+h3 {
+font-size: 17px;
+  width: auto;
+  padding: auto;
+  font-family: monospace;
+  color: navy;
+  position: relative;
+  text-align: left; /*alineación del texto*/
+  text-indent: 1px; /*sangría*/
+  display: block;
+
+}
+
+h4 {
+  font-family: cursive;
+  color: blue;
+}
+
+.botoncito{
+  padding: auto;
+  display: block;
+  widht: 50px;
+  height: 50px;
+  border-radius: 24px;
+  background-color: lightblue;
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+.botoncito:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transition: 0.9s;
+}
+
+
+img {
+ display: none;
+ max-width: 20%;
+ max-height: 20%;
+ padding: 10px;
+ cursor: auto;
+ float: left;
+
+/*animacion todo facha*/
+ animation-duration: 3s;
+ animation-name: slidein;
+ animation-direction: alternate;
+}
+
+
+ /*especificando que es la animacion slidein*/
+ @keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+ /*fino señores*/
+
+.HolaMundo {
+  font-size: 50px;
+   display: block;
+   width: 12ch;
+   font-family: monospace;
+   white-space: nowrap;
+   border-right: 4px solid;
+   animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+   overflow: hidden;
+}
+
+
+ @keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.estudio-de-mercado {
+  font-size: 24px;
+  display: auto;
+  width: 30ch;
+  height: auto;
+  padding-left: 15px;
+}
